@@ -2,10 +2,6 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: rickroll-ingress
-  annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
-    # nginx.ingress.kubernetes.io/ssl-redirect: "false"
-    # ingress.kubernetes.io/ssl-redirect: "false"
 spec:
   rules:
   - host: k8s.russparmer.local

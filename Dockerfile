@@ -1,5 +1,7 @@
 FROM nginx
 
-COPY web/ /usr/share/nginx/html
+COPY web/ /var/www/html/
+COPY media/ /var/www/media/
+COPY conf/ /etc/nginx/conf.d/
 
-EXPOSE 80
+EXPOSE 8080
