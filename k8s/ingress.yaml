@@ -4,10 +4,10 @@ metadata:
   name: rickroll-ingress
 spec:
   rules:
-  - host: k8s.russparmer.local
+  - host: rickroll.k8s.russparmer.local
     http:
       paths:
-      - path: /rickroll
+      - path: /
         backend:
           serviceName: rickroll-service
           servicePort: 80

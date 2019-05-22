@@ -16,7 +16,9 @@ spec:
     spec:
       containers:
       - name: rickroll
-        image: my-rickroll
-        imagePullPolicy: Never
+        image: rparmer02/repo:rickroll
+        imagePullPolicy: Always
         ports:
         - containerPort: 8080
+      imagePullSecrets:
+      - name: docker-registry-creds
